@@ -7,8 +7,9 @@ public:
         
         while(x) {
             if((res > MAX / 10) || (res < MIN / 10)) {
+                res = 0;
                 
-                return 0;
+                return res;
             }
 
             res = res * 10 + x % 10;
