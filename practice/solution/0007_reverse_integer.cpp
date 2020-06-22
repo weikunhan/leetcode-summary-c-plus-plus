@@ -5,7 +5,7 @@ public:
         const int MIN = -2e31;
         int res = 0;
         
-        while(x) {
+        while (x) {
             if((res > MAX / 10) || (res < MIN / 10)) {
                 res = 0;
                 
