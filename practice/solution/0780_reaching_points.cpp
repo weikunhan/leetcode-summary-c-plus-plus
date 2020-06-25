@@ -6,7 +6,7 @@ public:
         while (tx >= sx && ty >= sy) {
             if (tx > ty) {
                 if (ty == sy) {
-                    res = (tx - sx) % ty == 0;
+                    res = ((tx - sx) % ty == 0);
                     
                     return res;
                 }
@@ -14,7 +14,7 @@ public:
                 tx %= ty;
             } else {
                 if (tx == sx) {
-                    res = (ty - sy) % tx == 0;
+                    res = ((ty - sy) % tx == 0);
                     
                     return res;
                 }
@@ -23,7 +23,7 @@ public:
             }
         }
         
-        res = tx == sx && ty == sy;
+        res = (tx == sx && ty == sy);
             
         return res;
     }
