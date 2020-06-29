@@ -1,12 +1,10 @@
 class Solution {
 public:
     int reverse(int x) {
-        const int MAX = 2e31 - 1;
-        const int MIN = -2e31;
-        int res = 0;
+        long int res = 0;
         
-        while (x) {
-            if((res > MAX / 10) || (res < MIN / 10)) {
+        while(x) {
+            if((res > INT_MAX / 10) || (res < INT_MIN / 10)) {
                 res = 0;
                 
                 return res;
