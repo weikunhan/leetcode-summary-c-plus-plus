@@ -18,7 +18,7 @@ public:
             }
         }
         
-        res += value_dict[s[s.size() - 1]];
+        res += value_dict[s.back()];
         
         return res;
     }
