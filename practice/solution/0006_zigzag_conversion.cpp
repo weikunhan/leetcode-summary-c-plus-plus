@@ -12,8 +12,8 @@ public:
             return res;
         } 
         
-        for (int i = 0; i < s.size(); i++) {
-            value_list[count] += s[i];
+        for (char& c : s) {
+            value_list[count] += c;
             
             if (count == 0) {
                 sign = 1;
