@@ -5,16 +5,16 @@ public:
         unordered_map<char, char> value_dict = {{']', '['}, {'}', '{'}, {')', '('}};
         bool res = false;
         
-        for (int i = 0; i < s.size(); i++) {
-            if (value_dict.find(s[i]) == value_dict.end()) {
-                value_stack.push(s[i]);
+        for (char& c : s) {
+            if (value_dict.find(c) == value_dict.end()) {
+                value_stack.push(c);
             } else {
                 if (value_stack.empty()) {
                     
                     return res;
                 }
                 
-                if (value_dict[s[i]] != value_stack.top()) {
+                if (value_dict[c] != value_stack.top()) {
                     
                     return res;
                 }
