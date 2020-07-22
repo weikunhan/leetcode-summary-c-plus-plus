@@ -15,7 +15,6 @@ public:
             }
         }
         
-
         for (int i = row_end - 2; i >= 0; i--) {
             for(int j = i + 2; j < col_end; j++){
                 dp_list[i][j] = (dp_list[i + 1][j - 1] && s[i] == s[j]);     
