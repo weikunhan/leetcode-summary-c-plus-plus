@@ -28,6 +28,5 @@ public:
         left->next = left->next->next;
 
         return dummy_head.next;
-        
     }
 };
