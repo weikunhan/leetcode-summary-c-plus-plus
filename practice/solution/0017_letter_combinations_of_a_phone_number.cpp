@@ -20,8 +20,9 @@ public:
         if (digits.size() == 1) {
             string temp_value = value_list[digits[0] - 48];
             
-            for (int i = 0; i < temp_value.size(); i++) {
-                temp_list.push_back(temp_value.substr(i, 1));
+            for (char& c : temp_value) {
+                string s(1, c);
+                temp_list.push_back(s);
             }
         
             return temp_list;
@@ -29,9 +30,11 @@ public:
         
         string temp_value = value_list[digits[0] - 48];
         
-        for (int i = 0; i < temp_value.size(); i++) {
-            for (string value: dfs(digits.substr(1)))
-                temp_list.push_back(temp_value.substr(i, 1) + value);
+        for (char& c : temp_value) {
+            for (string value: dfs(digits.substr(1))) {
+                string s(1, c);
+                temp_list.push_back(s + value);
+            }
         }
         
         return temp_list;
