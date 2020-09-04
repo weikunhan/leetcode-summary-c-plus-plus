@@ -28,7 +28,7 @@ Array is the most simple data structure. For some numerical data-related jobs, y
 | ---- | --------------------------------- | --------------------------------- |
 | 14 | https://leetcode.com/problems/longest-common-prefix/ | [this link](../practice/solution/0014_longest_common_prefix.cpp) |
 | 54 | https://leetcode.com/problems/spiral-matrix/ | [this link](../practice/solution/0054_spiral_matrix.cpp) |
-| 56 | https://leetcode.com/problems/merge-intervals/ | |
+| 56 | https://leetcode.com/problems/merge-intervals/ | [this link](../practice/solution/0056_merge_intervals.cpp) |
 | 57 | https://leetcode.com/problems/insert-interval/ | |
 | 59 | https://leetcode.com/problems/spiral-matrix-ii/ | |
 | 238 | https://leetcode.com/problems/product-of-array-except-self/ | |
