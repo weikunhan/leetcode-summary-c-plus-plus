@@ -23,6 +23,5 @@ public:
 	    res.insert(res.end(), right_value_list.begin(), right_value_list.end());
         
         return res;
-        
     }
 };
