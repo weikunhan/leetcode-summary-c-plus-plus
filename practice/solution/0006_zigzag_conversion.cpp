@@ -8,17 +8,17 @@ public:
         
         if (numRows == 1 || numRows >= s.size()) {
             res = s;
-                
+            
             return res;
-        } 
+        }
         
-        for (char& c : s) {
+        for (auto c : s) {
             value_list[count] += c;
             
             if (count == 0) {
                 sign = 1;
             }
-            
+                    
             if (count == numRows - 1) {
                 sign = -1;
             }
@@ -26,10 +26,10 @@ public:
             count += sign;
         }
         
-        for (int i = 0; i < value_list.size(); i++) {
-            res += value_list[i];
+        for (auto s : value_list) {
+            res += s;
         }
-            
+        
         return res;
     }
 };
