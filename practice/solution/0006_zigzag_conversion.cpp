@@ -26,8 +26,8 @@ public:
             count += sign;
         }
         
-        for (auto s : value_list) {
-            res += s;
+        for (auto temp : value_list) {
+            res += temp;
         }
         
         return res;
