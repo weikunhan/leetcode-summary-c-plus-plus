@@ -1,4 +1,4 @@
-# leetcode-summary-c-plus-plus
+# Leetcode Summary C++
 
 The summary for LeetCode questions written in C++. Please check [Leetcode](https://leetcode.com/) for more information. For Python version, please check [leetcode-summary-python](https://github.com/weikunhan/leetcode-summary-python). For Java version, please check [leetcode-summary-java](https://github.com/weikunhan/leetcode-summary-java).
 
