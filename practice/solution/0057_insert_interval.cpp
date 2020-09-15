@@ -20,7 +20,7 @@ public:
         
         res.insert(res.end(), left_value_list.begin(), left_value_list.end());
         res.push_back(vector<int>{start, end});
-	    res.insert(res.end(), right_value_list.begin(), right_value_list.end());
+        res.insert(res.end(), right_value_list.begin(), right_value_list.end());
         
         return res;
     }
